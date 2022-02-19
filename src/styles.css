@@ -1,4 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+/*INICIO codigo loading*/
+
+  
+  /*
+    Color del Loading
+  */
+  svg path,
+  svg rect{
+    fill: black;
+  }
+/*FIN codigo loading*/
 
 
 .animated{
@@ -43,3 +53,4 @@
     --webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
+
