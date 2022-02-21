@@ -29,11 +29,11 @@
      <!--*ngIf="!productosService.cargando", lo ponemos con negacion !   porque no deberia de aparecer si esta cargando-->
       <div *ngIf="!productosService.cargando"
       class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
-<!--Con esta linea    Realizamos el llamado de la info de firebase y la replicamos acorde a la cantidad de objectos que esten creados
-llamando el productoService que injectamos en el construtor de portafolio.component.ts-->
+      <!--Con esta linea    Realizamos el llamado de la info de firebase y la replicamos acorde a la cantidad de objectos que esten creados
+      llamando el productoService que injectamos en el construtor de portafolio.component.ts-->
         <a *ngFor="let producto of productosService.productos"
         
-        routerLink="/item" class="animated fadeIn rk-item ae-masonry__item">
+        routerLink="/item/{{producto.cod}}" class="animated fadeIn rk-item ae-masonry__item">
           <img src="assets/productos/{{producto.url}}.jpg" alt="">
           <div class=" item-meta">
             <h2>{{producto.titulo}}</h2>
